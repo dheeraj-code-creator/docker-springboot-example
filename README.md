@@ -4,11 +4,11 @@ docker-compose up --build -d
 # command to check containers
 docker ps --all
 
-#command to check images
+# command to check images
 docker images
 
-#command to stop containers
+# command to stop containers
 docker stop container-id
 
-#command to delete all containers
+# command to delete all containers
 docker system prune
