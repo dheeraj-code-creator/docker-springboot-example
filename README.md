@@ -15,7 +15,7 @@ docker push dheeraj1990kk/docker-springboot-example
 docker pull dheeraj1990kk/docker-springboot-example:0.0.1-SNAPSHOT
 
 # run pulled images (Note for running docker-compose images command is different.)
-docker-compose up
+docker-compose up -d
 
 ## if you will get any error then use below command to login your docker account and then follow below steps.
 1. docker login --username=dheeraj1990kk
