@@ -2,6 +2,25 @@
 # command to run docker compose
 docker-compose up --build -d
 
+# steps to push docker-compose image to docker hub
+docker images
+
+# select image name and tag it to your docker hub repository name
+docker tag docker-springboot-example:0.0.1-SNAPSHOT dheeraj1990kk/docker-springboot-example:0.0.1-SNAPSHOT
+
+# push to docker hub
+docker push dheeraj1990kk/docker-springboot-example
+
+# Pull from docker hub to any machine
+docker pull dheeraj1990kk/docker-springboot-example:0.0.1-SNAPSHOT
+
+## if you will get any error then use below command to login your docker account and then follow below steps.
+1. docker login --username=dheeraj1990kk
+2. provide password
+3. docker images
+4. docker tag docker-springboot-example:0.0.1-SNAPSHOT dheeraj1990kk/docker-springboot-example:0.0.1-SNAPSHOT
+5. docker push dheeraj1990kk/docker-springboot-example
+
 # command to check containers
 docker ps --all
 
